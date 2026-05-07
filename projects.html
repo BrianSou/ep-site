@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Brian Sounevongsa</title>
+  <meta name="description" content="Projects and artifacts in Brian Sounevongsa’s electronic portfolio.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Brian Sounevongsa home">
+      <span class="brand-mark">BS</span>
+      <span class="brand-text">Brian Sounevongsa<span>Computer Science · UVA</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary navigation"><a href="index.html" >Home</a><a href="projects.html" aria-current="page">Projects</a><a href="about.html" >About</a><a href="resume.html" >Resume</a><a href="reflection.html" >Reflection</a><a href="contact.html" >Contact</a></nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Projects</span>
+    <h1>Receipts for the narrative.</h1>
+    <p class="lead">A curated set of coursework and co-curricular artifacts. I use project names first and course numbers second because the reader should understand what I built before they learn where it came from.</p>
+    <div class="filters" aria-label="Project filters">
+      <button class="filter-btn active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="build" type="button">Build</button>
+      <button class="filter-btn" data-filter="data" type="button">Data</button>
+      <button class="filter-btn" data-filter="security" type="button">Security</button>
+      <button class="filter-btn" data-filter="ai" type="button">AI</button>
+      <button class="filter-btn" data-filter="systems" type="button">Systems</button>
+      <button class="filter-btn" data-filter="process" type="button">Process</button>
+    </div>
+    <input class="search-box" id="project-search" type="search" placeholder="Search projects by topic, skill, or artifact..." aria-label="Search projects">
+  </div>
+</section>
+<section class="section tight">
+  <div class="container project-grid">
+    
+<article class="project-card reveal" data-category="build teamwork coursework" data-title="HooTasks" data-summary="Created a student-team task dashboard with projects, assignments, deadlines, comments, and status tracking.">
+  <a class="thumb" href="projects/hootasks.html" aria-label="Open project: HooTasks">
+    <img src="assets/img/project-hootasks.svg" alt="Illustration for HooTasks">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 3240 Software Engineering</div>
+    <h3>HooTasks</h3>
+    <p>Created a student-team task dashboard with projects, assignments, deadlines, comments, and status tracking.</p>
+    <div class="meta"><span>Django / web app</span><span>Git</span><span>User stories</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/hootasks.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="data build coursework" data-title="UVA ClubHub" data-summary="Designed a Flask/MySQL club catalog where students browse, save, and request to join organizations while officers manage clubs, events, and members.">
+  <a class="thumb" href="projects/uva-clubhub.html" aria-label="Open project: UVA ClubHub">
+    <img src="assets/img/project-clubhub.svg" alt="Illustration for UVA ClubHub">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 4750 Database Systems</div>
+    <h3>UVA ClubHub</h3>
+    <p>Designed a Flask/MySQL club catalog where students browse, save, and request to join organizations while officers manage clubs, events, and members.</p>
+    <div class="meta"><span>Flask</span><span>MySQL</span><span>E-R design</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/uva-clubhub.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="security analysis coursework" data-title="Web Security Report" data-summary="Analyzed weaknesses in login behavior, input handling, and session management, then explained practical ways to reduce the risk.">
+  <a class="thumb" href="projects/security-report.html" aria-label="Open project: Web Security Report">
+    <img src="assets/img/project-security.svg" alt="Illustration for Web Security Report">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 3710 Intro to Cybersecurity</div>
+    <h3>Web Security Report</h3>
+    <p>Analyzed weaknesses in login behavior, input handling, and session management, then explained practical ways to reduce the risk.</p>
+    <div class="meta"><span>Threat modeling</span><span>Web security</span><span>Risk explanation</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/security-report.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="systems coursework" data-title="Reliable File Transfer" data-summary="Implemented a reliable transfer process with packets, sequence numbers, acknowledgments, retries, and reconstruction.">
+  <a class="thumb" href="projects/reliable-transfer.html" aria-label="Open project: Reliable File Transfer">
+    <img src="assets/img/project-network.svg" alt="Illustration for Reliable File Transfer">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 4457 Computer Networks</div>
+    <h3>Reliable File Transfer</h3>
+    <p>Implemented a reliable transfer process with packets, sequence numbers, acknowledgments, retries, and reconstruction.</p>
+    <div class="meta"><span>Sockets</span><span>Packets</span><span>Reliability</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/reliable-transfer.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="ai analysis coursework" data-title="Movie Recommender" data-summary="Built a recommendation experiment that ranked movie suggestions based on preferences, features, scoring, and evaluation.">
+  <a class="thumb" href="projects/movie-recommender.html" aria-label="Open project: Movie Recommender">
+    <img src="assets/img/project-ai.svg" alt="Illustration for Movie Recommender">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 4710 Artificial Intelligence</div>
+    <h3>Movie Recommender</h3>
+    <p>Built a recommendation experiment that ranked movie suggestions based on preferences, features, scoring, and evaluation.</p>
+    <div class="meta"><span>Python</span><span>Recommendation logic</span><span>Evaluation</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/movie-recommender.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="build creative cocurricular" data-title="Minecraft Forge Mod" data-summary="Added a custom ore, tool set, and crafting recipes while learning how a mod fits inside an existing game structure.">
+  <a class="thumb" href="projects/minecraft-mod.html" aria-label="Open project: Minecraft Forge Mod">
+    <img src="assets/img/project-minecraft.svg" alt="Illustration for Minecraft Forge Mod">
+  </a>
+  <div class="body">
+    <div class="eyebrow">Co-curricular project</div>
+    <h3>Minecraft Forge Mod</h3>
+    <p>Added a custom ore, tool set, and crafting recipes while learning how a mod fits inside an existing game structure.</p>
+    <div class="meta"><span>Java</span><span>Forge</span><span>Game systems</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/minecraft-mod.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="process career cocurricular" data-title="Interview Practice Tracker" data-summary="Tracked problems, patterns, mistakes, and review cycles across arrays, strings, trees, graphs, recursion, and dynamic programming.">
+  <a class="thumb" href="projects/interview-tracker.html" aria-label="Open project: Interview Practice Tracker">
+    <img src="assets/img/project-tracker.svg" alt="Illustration for Interview Practice Tracker">
+  </a>
+  <div class="body">
+    <div class="eyebrow">Career preparation / CS 1501</div>
+    <h3>Interview Practice Tracker</h3>
+    <p>Tracked problems, patterns, mistakes, and review cycles across arrays, strings, trees, graphs, recursion, and dynamic programming.</p>
+    <div class="meta"><span>Python / spreadsheet</span><span>Pattern tracking</span><span>Reflection</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="projects/interview-tracker.html">View project</a>
+  </div>
+</article>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html"><span class="brand-mark">BS</span><span class="brand-text">Brian Sounevongsa<span>Practical software, clear systems</span></span></a>
+      <p class="footer-note">Built as an electronic portfolio for LASE 3602. Last updated <span data-year></span>.</p>
+    </div>
+    <div class="footer-links">
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

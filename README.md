@@ -26,3 +26,7 @@ Update these items with your exact information:
 4. `reflection.html` video placeholder after you record the final screencast.
 
 No external CSS, fonts, or JavaScript libraries are required.
+
+## cPanel deployment note
+
+This package includes a root-level `.cpanel.yml` file for cPanel Git deployment. Keep it beside `index.html` in the repository root and commit all files before deploying. The default deploy path is `$HOME/public_html/`; change it inside `.cpanel.yml` only if your cPanel site root is different.

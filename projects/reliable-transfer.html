@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reliable File Transfer | Brian Sounevongsa</title>
+  <meta name="description" content="Implemented a reliable transfer process with packets, sequence numbers, acknowledgments, retries, and reconstruction.">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="../index.html" aria-label="Brian Sounevongsa home">
+      <span class="brand-mark">BS</span>
+      <span class="brand-text">Brian Sounevongsa<span>Computer Science · UVA</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary navigation"><a href="../index.html" >Home</a><a href="../projects.html" aria-current="page">Projects</a><a href="../about.html" >About</a><a href="../resume.html" >Resume</a><a href="../reflection.html" >Reflection</a><a href="../contact.html" >Contact</a></nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero project-detail-hero">
+  <div class="container">
+    <div class="breadcrumbs"><a href="../projects.html">Projects</a><span>/</span><span>Reliable File Transfer</span></div>
+    <div class="project-detail-head">
+      <div class="reveal">
+        <span class="eyebrow">CS 4457 Computer Networks</span>
+        <h1>Reliable File Transfer</h1>
+        <p class="lead">A networks assignment about making communication survive failure.</p>
+        <div class="pill-row"><span class="pill">Sockets</span><span class="pill">Packets</span><span class="pill">Reliability</span><span class="pill">Protocols</span></div>
+      </div>
+      <div class="image-wrap reveal"><img src="../assets/img/project-network.svg" alt="Project illustration for Reliable File Transfer"></div>
+    </div>
+  </div>
+</section>
+<section class="section tight">
+  <div class="container detail-layout">
+    <div class="detail-content">
+      <article class="card detail-card reveal"><h2>Overview</h2><p>This project focused on the part of computing users usually never see: how data moves between machines. The artifact shows a file transfer process designed to keep working even when messages are dropped, delayed, or received out of order.</p></article>
+      <article class="card detail-card reveal"><h2>Problem</h2><p>Sending a file sounds simple until the connection is unreliable. The program has to track what was sent, what was received, what needs to be retried, and how the receiver should reconstruct the final file.</p></article>
+      <article class="card detail-card reveal"><h2>Process</h2><p>This is the basic path I followed while developing or analyzing the artifact.</p><div class="process-steps"><div class="step"><b>01</b><span>Split data into packets with ordering information.</span></div><div class="step"><b>02</b><span>Handled acknowledgments and retransmission logic.</span></div><div class="step"><b>03</b><span>Tested edge cases where messages were delayed or missing.</span></div><div class="step"><b>04</b><span>Explained the communication flow with a sender-receiver diagram.</span></div></div></article>
+      <article class="card detail-card reveal"><h2>Value</h2><p>This artifact supports the systems side of my professional narrative. It shows that I care about what happens underneath the interface, not just what appears on the screen.</p></article>
+      <article class="card detail-card reveal"><h2>Reflection</h2><p>The useful lesson was that reliability is designed. It is not a default property of software.</p></article>
+    </div>
+    <aside class="sidebar reveal">
+      <div class="card">
+        <h3>Artifact snapshot</h3>
+        <div class="stat-list">
+          <div class="stat"><b>Origin</b><span>CS 4457 Computer Networks</span></div>
+          <div class="stat"><b>Term</b><span>Spring 2025</span></div>
+          <div class="stat"><b>Type</b><span>Coursework</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Why this belongs</h3>
+        <p>This artifact supports the portfolio’s main claim: I build practical software while thinking carefully about the system behind the surface.</p>
+        <a class="btn secondary small" href="../projects.html">Back to projects</a>
+      </div>
+    </aside>
+  </div>
+</section>
+<section class="section tight">
+  <div class="container">
+    <span class="eyebrow">Keep exploring</span>
+    <h2 style="margin-bottom:1.3rem;">Related artifacts</h2>
+    <div class="project-grid">
+<article class="project-card reveal" data-category="build teamwork coursework" data-title="HooTasks" data-summary="Created a student-team task dashboard with projects, assignments, deadlines, comments, and status tracking.">
+  <a class="thumb" href="../projects/hootasks.html" aria-label="Open project: HooTasks">
+    <img src="../assets/img/project-hootasks.svg" alt="Illustration for HooTasks">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 3240 Software Engineering</div>
+    <h3>HooTasks</h3>
+    <p>Created a student-team task dashboard with projects, assignments, deadlines, comments, and status tracking.</p>
+    <div class="meta"><span>Django / web app</span><span>Git</span><span>User stories</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="../projects/hootasks.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="data build coursework" data-title="UVA ClubHub" data-summary="Designed a Flask/MySQL club catalog where students browse, save, and request to join organizations while officers manage clubs, events, and members.">
+  <a class="thumb" href="../projects/uva-clubhub.html" aria-label="Open project: UVA ClubHub">
+    <img src="../assets/img/project-clubhub.svg" alt="Illustration for UVA ClubHub">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 4750 Database Systems</div>
+    <h3>UVA ClubHub</h3>
+    <p>Designed a Flask/MySQL club catalog where students browse, save, and request to join organizations while officers manage clubs, events, and members.</p>
+    <div class="meta"><span>Flask</span><span>MySQL</span><span>E-R design</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="../projects/uva-clubhub.html">View project</a>
+  </div>
+</article>
+
+<article class="project-card reveal" data-category="security analysis coursework" data-title="Web Security Report" data-summary="Analyzed weaknesses in login behavior, input handling, and session management, then explained practical ways to reduce the risk.">
+  <a class="thumb" href="../projects/security-report.html" aria-label="Open project: Web Security Report">
+    <img src="../assets/img/project-security.svg" alt="Illustration for Web Security Report">
+  </a>
+  <div class="body">
+    <div class="eyebrow">CS 3710 Intro to Cybersecurity</div>
+    <h3>Web Security Report</h3>
+    <p>Analyzed weaknesses in login behavior, input handling, and session management, then explained practical ways to reduce the risk.</p>
+    <div class="meta"><span>Threat modeling</span><span>Web security</span><span>Risk explanation</span></div>
+    <div class="spacer"></div>
+    <a class="btn secondary small" href="../projects/security-report.html">View project</a>
+  </div>
+</article>
+</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html"><span class="brand-mark">BS</span><span class="brand-text">Brian Sounevongsa<span>Practical software, clear systems</span></span></a>
+      <p class="footer-note">Built as an electronic portfolio for LASE 3602. Last updated <span data-year></span>.</p>
+    </div>
+    <div class="footer-links">
+      <a href="../projects.html">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
